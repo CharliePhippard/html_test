@@ -1,30 +1,98 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <title>Charlie's Photography Portfolio</title>
   <style>
+    /* Reset and Core Styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      background-color: #000000;
+      color: #ffffff;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      padding: 24px 16px;
+    }
+
+    /* Container */
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Typography */
+    h1 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+      letter-spacing: -0.5px;
+    }
+
+    p {
+      color: #a0a0a0;
+      font-size: 1rem;
+      margin-bottom: 32px;
+    }
+
+    /* Gallery Layout */
+    .gallery-item {
+      margin-bottom: 40px;
+    }
+
+    .image-wrapper {
+      width: 100%;
+      background-color: #111111;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
     img {
-      max-width: 200px;
+      display: block;
       width: 100%;
       height: auto;
     }
+
+    figcaption {
+      font-size: 0.9rem;
+      color: #e0e0e0;
+      margin-top: 12px;
+      padding: 0 4px;
+      font-weight: 400;
+    }
   </style>
 </head>
-
 <body>
 
-  <h1>Charlie's Webpage</h1>
+  <div class="container">
+    <header>
+      <h1>Charlie's Webpage</h1>
+      <p>
+        Hi, welcome to my Webpage. My name is Charlie and I'm from Cambridgeshire, UK.
+        I like doing photography as a hobby and I have a strong interest in architecture.
+      </p>
+    </header>
 
-  <p>
-    Hi, welcome to my Webpage. My name is Charlie and I'm from Cambridgeshire, UK.
-    I like doing photography as a hobby and I have a strong interest in architecture.
-  </p>
-
-  <img
-    src="https://yt3.ggpht.com/Cu_t_HnCHPlcVQrmruWrRUoKgu7Pk5HpEVqDofCRITENcsNB50NrBG0VXFBT0Ca64VK3vGxF_Q=s0"
-    alt="image"
-  >
+    <main>
+      
+      <figure class="gallery-item">
+        <div class="image-wrapper">
+          <img 
+            src="GIB025013004002.jpg" 
+            alt="Tower 42 cantilevers during construction"
+            loading="lazy"
+          >
+        </div>
+        <figcaption>Tower 42 cantilevers during construction</figcaption>
+      </figure>
+      
+    </main>
+  </div>
 
 </body>
 </html>
